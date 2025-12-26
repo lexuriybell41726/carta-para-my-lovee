@@ -74,8 +74,8 @@ body{
     <div id="envelope">
       <h1>Para el amor de mi vida</h1>
       <div class="sub">Feliz aniversario, mi amor ❤️</div>
-      <p style="margin-top:20px;font-weight:600">Para MI ESPOSITA HERMOSA 💗❤️</p>
-      <p style="font-size:15px">Para ti❤️💖🫂</p>
+      <p style="margin-top:20px;font-weight:600">Para ti, Andrea Alejandra Lanchipa Pacheco</p>
+      <p style="font-size:15px">Para el amor de mi vida, desde mi trabajo con el corazón en casa</p>
       <button class="min-btn" onclick="openLetter()">Abrir la carta</button>
     </div><!-- CARTA -->
 <div id="paper">
@@ -107,15 +107,18 @@ body{
 </div>
 
   </div>
-</div><!-- Música --><!-- Nota: los navegadores NO permiten reproducir canciones comerciales (YouTube/Spotify) automáticamente --><div class="music-box">
-  <p>🎵 Nuestra canción</p>
-  <button onclick="openSong()">Reproducir “Amapolas” – Leo Rizzi</button>
-</div>
-<script>
+</div><!-- Música --><!-- Nota: los navegadores NO permiten reproducir canciones comerciales (YouTube/Spotify) automáticamente --><script>
 function openLetter(){
-  document.getElementById('envelope').style.display='none';
-  document.getElementById('paper').style.display='block';
-}function openSong(){ window.open('https://open.spotify.com/track/6n4bIT6o4V1WkH2nJ3yZ2V','_blank'); }); } } </script>
+  var envelope = document.getElementById('envelope');
+  var paper = document.getElementById('paper');
+  if(envelope){ envelope.style.display = 'none'; }
+  if(paper){ paper.style.display = 'block'; }
+}
 
-</body>
+function openSong(){
+  window.open('https://open.spotify.com/track/6n4bIT6o4V1WkH2nJ3yZ2V','_blank');
+});
+  }
+}
+</script></body>
 </html>
