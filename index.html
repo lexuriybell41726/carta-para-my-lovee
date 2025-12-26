@@ -1,0 +1,125 @@
+<!DOCTYPE html><html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Para el amor de mi vida</title>
+<style>
+:root{
+  --rosa:#ffd6e5;
+  --rosa-fuerte:#ff8fb1;
+  --texto:#4a1f2d;
+}
+*{box-sizing:border-box}
+body{
+  margin:0;
+  font-family: Georgia, 'Times New Roman', serif;
+  background: var(--rosa);
+  color: var(--texto);
+  overflow-x:hidden;
+}
+.hearts{
+  position:fixed;
+  inset:0;
+  pointer-events:none;
+  background-image:
+    radial-gradient(circle at 20% 30%, rgba(255,143,177,.35) 12px, transparent 13px),
+    radial-gradient(circle at 70% 60%, rgba(255,143,177,.35) 10px, transparent 11px),
+    radial-gradient(circle at 40% 80%, rgba(255,143,177,.35) 8px, transparent 9px);
+}
+.wrap{
+  min-height:100vh;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding:24px;
+}
+.card{
+  max-width:720px;
+  width:100%;
+  background:#fff;
+  border-radius:22px;
+  box-shadow:0 20px 50px rgba(0,0,0,.15);
+  padding:36px 32px 40px;
+  text-align:center;
+}
+#envelope h1{
+  margin:0;
+  font-size:30px;
+}
+#envelope .sub{
+  margin-top:6px;
+  font-size:16px;
+}
+.min-btn{
+  margin-top:26px;
+  padding:12px 26px;
+  border-radius:999px;
+  border:none;
+  background: var(--rosa-fuerte);
+  color:#fff;
+  font-size:16px;
+  cursor:pointer;
+}
+.min-btn:active{transform:scale(.97)}
+#paper{display:none;text-align:left;margin-top:10px}
+#paper p{font-size:18px;line-height:1.7;margin-bottom:16px}
+.signature{margin-top:26px;font-style:italic;text-align:right}
+</style>
+</head>
+<body>
+<div class="hearts"></div>
+<div class="wrap">
+  <div class="card">
+    <!-- SOBRE -->
+    <div id="envelope">
+      <h1>Para el amor de mi vida</h1>
+      <div class="sub">Feliz aniversario, mi amor ❤️</div>
+      <p style="margin-top:20px;font-weight:600">Para ti, Andrea Alejandra Lanchipa Pacheco</p>
+      <p style="font-size:15px">Para el amor de mi vida, desde mi trabajo con el corazón en casa</p>
+      <button class="min-btn" onclick="openLetter()">Abrir la carta</button>
+    </div><!-- CARTA -->
+<div id="paper">
+  <p>Mi amor, mi esposa hermosa:</p>
+  <p>Hay historias que se cuentan con fechas, y hay historias que se sienten sin necesidad de explicarlas. La nuestra pertenece a las dos.</p>
+  <p>Porque antes de ser “nosotros”, fuimos dos caminos distintos que la vida decidió cruzar en febrero del 2024, cuando aún no sabía que tu presencia iba a cambiar la manera en que respiro, pienso y amo.</p>
+  <p>Desde ese momento algo empezó a crecer despacio, sin ruido, sin promesas exageradas, pero con una fuerza que solo el amor verdadero tiene.</p>
+  <p>Y luego llegó el 26 de abril del 2024, el día en que empezamos a salir, el día en que sin decirlo en voz alta, mi corazón ya había tomado una decisión: elegirte.</p>
+  <p>Hoy han pasado 1 año y 10 meses desde que nos conocemos y 1 año y 8 meses desde que empezamos este camino juntos.</p>
+  <p>Y aun así, cuando te miro, siento que el tiempo no ha pasado… porque mi amor por ti no se ha gastado, no se ha debilitado, no se ha acostumbrado. Al contrario, ha aprendido.</p>
+  <p>Hemos vivido días buenos y días duros. Momentos de calma y momentos de preocupación. Cansancio, estrés, silencios, lágrimas que no siempre se dicen en voz alta.</p>
+  <p>Pero incluso en esos momentos, incluso cuando la vida pesa más de lo justo, tú sigues siendo la persona que mi corazón busca.</p>
+  <p>Tú no solo eres la mujer que amo. Eres la mujer que me enseñó a quedarme cuando antes hubiera huido. La que me mostró que amar no es solo sentir bonito, sino resistir, cuidar y volver a intentarlo.</p>
+  <p>Eres la razón por la que hoy pienso en el futuro con responsabilidad, con esperanza y con ganas de ser mejor.</p>
+  <p>Si supieras cuántas veces te pienso cuando no estoy contigo… cuántas veces te nombro en silencio, cuántas veces le pido a la vida que te cuide incluso cuando yo no puedo hacerlo.</p>
+  <p>Mi amor por ti no siempre se expresa perfecto, pero siempre es sincero.</p>
+  <p>Te amo en tu sonrisa, pero también en tus enojos. Te amo en tu fortaleza y en tus momentos de cansancio. Te amo cuando estás segura y cuando dudas.</p>
+  <p>Te amo porque eres real, porque no finges, porque eres tú… completa.</p>
+  <p>Contigo aprendí que el amor no es un cuento sin problemas, es una historia donde dos personas deciden no soltarse aunque el mundo apriete.</p>
+  <p>Y si hoy miro atrás, agradezco cada paso, incluso los difíciles, porque todos me llevaron a este lugar: a ti.</p>
+  <p>Si mañana la vida nos vuelve a poner a prueba, quiero que recuerdes esto: mi amor por ti no depende de un día, de una discusión o de un error.</p>
+  <p>Depende de lo que siento cada vez que te miro y sé, sin dudas, que mi lugar está contigo.</p>
+  <p>Porque tú no eres una etapa. No eres un momento. No eres un recuerdo bonito.</p>
+  <p>Tú eres la persona con la que quiero caminar incluso cuando las fuerzas falten.</p>
+  <p><strong>Y a pesar de que te olvidaste… te amo mucho, mi amor.</strong></p>
+  <p>Con un amor que no se cansa, que no se rinde, que no se va.</p>
+  <div class="signature">Con todo mi corazón,<br>tu esposo que te ama más de lo que sabe decir.</div>
+</div>
+</div>
+
+  </div>
+</div><audio id="loveMusic" preload="auto">
+  <source src="https://cdn.pixabay.com/download/audio/2022/03/15/audio_7b7c1f7b6c.mp3?filename=romantic-piano-112191.mp3" type="audio/mpeg">
+</audio>
+<script>
+function openLetter(){
+  document.getElementById('envelope').style.display='none';
+  document.getElementById('paper').style.display='block';
+  const music = document.getElementById('loveMusic');
+  if(music){
+    music.volume = 0.5;
+    music.play().catch(()=>{});
+  }
+}
+</script>
+</body>
+</html>
